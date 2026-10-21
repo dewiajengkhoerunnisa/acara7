@@ -1,14 +1,20 @@
 <?php
-$x = 50;
-$y = 50;
+    $nama = "Ajeng";
+    $nilai = 85;
+    $kehadiran = 90;
 
-if ($x == 100 || $y == 80) {
-    echo "Masuk sini <br>";
-} elseif ($x == 100) {
-    echo "Masuk blok 2 <br>";
-} else {
-    echo "Masuk Keranjang <br>";
-}
+    echo "<h3>Program Penilaian Sederhana</h3>";
+    echo "Nama: " . $nama . "<br>";
+    echo "Nilai: " . $nilai . "<br>";
+    echo "Kehadiran: " . $kehadiran . "%<br><br>";
 
-echo "Program Selesai";
+    if ($nilai >= 90 || $kehadiran >= 95) {
+        echo "Predikat: Sangat Baik";
+    } elseif ($nilai >= 75) {
+        echo "Predikat: Baik";
+    } else {
+        echo "Predikat: Perlu Ditingkatkan";
+    }
+
+    echo "<br><br>Program selesai dijalankan.";
 ?>

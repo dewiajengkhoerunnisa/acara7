@@ -1,30 +1,22 @@
 <?php
-    /*
-    $i = 1;
+    $colors = array("Merah", "Kuning", "Hitam", "Pink");
 
-    while ($i < 6) {
-        echo $i;
-        $i = $i + 1; // $i++;
-    }
-    */
+    echo "<h3>Daftar Warna Favorit</h3>";
 
-    /*
-    for ($i = 1; $i < 100; $i++) {
-        echo $i . "<br>";
-    }
-    */
-
-    $colors = array("red", "yellow", "black", "pink");
-
+    echo "<b>1. Menggunakan Foreach</b><br>";
     foreach ($colors as $value) {
-        echo "$value <br>";
+        echo "- " . $value . "<br>";
     }
 
-    for ($i = 0; $i <= 3; $i++) {
-        echo $colors[$i] . "<br>";
+    echo "<br><b>2. Menggunakan For</b><br>";
+    for ($i = 0; $i < count($colors); $i++) {
+        echo ($i + 1) . ". " . $colors[$i] . "<br>";
     }
 
-    for ($i = 0; $i <= 10; $i++) {
+    echo "<br><b>3. Mengulang Daftar Warna</b><br>";
+    for ($i = 0; $i < 8; $i++) {
         echo $colors[$i % count($colors)] . "<br>";
     }
+
+    echo "<br>Program selesai dijalankan.";
 ?>
